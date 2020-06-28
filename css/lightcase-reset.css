@@ -1,0 +1,60 @@
+.lightcase-icon-prev {
+	width: 10px;
+	height: 10px;
+	top: 50%;
+	margin-top: -31px;
+	border-bottom: 5px solid #fff;
+	border-left: 5px solid #fff;
+	left: 30px !important;
+	opacity: 0.6;
+	transform: rotate(45deg);
+}
+
+.lightcase-icon-prev::before {
+  	content: normal;
+}
+
+.lightcase-icon-next {
+	width: 10px;
+	height: 10px;
+	top: 50%;
+	margin-top: -31px;
+	border-bottom: 5px solid #fff;
+	border-left: 5px solid #fff;
+	right: 30px !important;
+	opacity: 0.6;
+	transform: rotate(225deg);
+}
+
+.lightcase-icon-next::before {
+  	content: normal;
+}
+
+.lightcase-icon-close {
+	position: absolute;
+	right: 32px;
+	top: 32px;
+	width: 32px;
+	height: 32px;
+	z-index: 1000;
+	color: #fff;
+	font-size: 0;
+}
+
+.lightcase-icon-close:before,
+.lightcase-icon-close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+}
+
+.lightcase-icon-close:before {
+    transform: rotate(45deg);
+}
+
+.lightcase-icon-close:after {
+    transform: rotate(-45deg);
+}
