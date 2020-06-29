@@ -1,0 +1,64 @@
+.wrapper {
+  padding: 0 15px;
+}
+@media (max-width: 1200px) {
+  .page .header {
+    overflow: hidden;
+  }
+  .page .header .down-header {
+    padding: 40px 0;
+  }
+  .page .header .down-header .info-down-header .selection-city span {
+    padding: 0 3px;
+  }
+  .page .history {
+    overflow: hidden;
+    padding-top: 60px;
+  }
+  .page .history .content-history .top-history .first-description-project .text-first-description-project {
+    line-height: 200%;
+  }
+  .page .history .content-history .top-history .first-description-project .overlay-btn-history .btn-download-android {
+    margin-top: 20px;
+  }
+  .page .history .content-history .down-history .select-language-network {
+    padding-top: 180px;
+  }
+  .page .for-driver {
+    overflow: hidden;
+    padding: 30px 0;
+  }
+  .page .for-driver .select-language-network {
+    padding-top: 5px;
+  }
+  .page .bonus {
+    overflow: hidden;
+  }
+  .page .bonus .cards {
+    padding: 40px 0;
+  }
+  .page .auto-park .select-language-network {
+    padding-top: 5px;
+  }
+  .page .faq {
+    overflow: hidden;
+  }
+  .page .faq .content-faq {
+    margin: 66px 0;
+  }
+  .page .reviews {
+    overflow: hidden;
+  }
+  .page .reviews .overlay-reviews {
+    padding: 133px 0;
+  }
+  .page .reviews .overlay-reviews .right-side-reviews {
+    margin-right: 210px;
+  }
+  .page .contacts .overlay-contacts {
+    flex-direction: column;
+  }
+  .page .contacts .overlay-contacts .forms {
+    padding-top: 50px;
+  }
+}

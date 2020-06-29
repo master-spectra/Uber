@@ -8,3 +8,4 @@ $('.accordion-content .accordion-title').click(function () {
 $('.overlay-right-side-reviews').slick({
 	dots: true
 });
+
