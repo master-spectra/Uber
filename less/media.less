@@ -65,6 +65,8 @@
 		}
 
 		.auto-park {
+			overflow: hidden;
+
 			.select-language-network {
 				padding-top: 5px;
 			}
@@ -85,17 +87,286 @@
 			    padding: 133px 0;
 				
 				.right-side-reviews {
-				    margin-right: 210px;
+		        	margin-right: 18%;
 				}
 			}
 		}
 
 		.contacts {
+			overflow: hidden;
+			
 			.overlay-contacts {
 				flex-direction: column;
 
 				.forms {
 					padding-top: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 900px) {
+	.page {
+		.header {
+			background: #050505;
+			
+			.top-header {
+				background: #050505;
+				padding: 0;
+				text-align: end;
+				
+				.fixed-menu {
+					display: none;
+				}
+				
+				.mobile-hamburger-menu {
+					display: block;
+					position: absolute;
+					visibility: hidden;
+					top: 10px;
+					right: 20px;
+
+				    .menu-icon {
+				        visibility: visible;
+				        font-size: 30px;
+				        color: #fff;
+				    }
+
+				    ul {
+				        transition: all 0.3s ease;
+						padding-top: 10px;
+
+				        li {
+				            padding-bottom: 10px;
+
+				            a {
+								color: #fff;
+				                font-size: 18px;
+				                text-decoration: none;
+				            }
+				        }
+				        
+				        &:hover {
+				            visibility: visible;
+				        }
+				    }
+
+				    
+				    &:hover {
+				        visibility: visible;
+				    }
+				
+					&:active {
+						visibility: hidden;
+					}
+				}
+			}
+
+			.down-header {
+				padding: 40px 0;
+
+				.info-down-header {
+					.selection-city {
+					    width: 41%;
+					}
+				}
+			}
+		}
+		
+		.reviews {
+			.overlay-reviews {
+				flex-direction: column;
+    			align-items: flex-start;
+
+    			.right-side-reviews {
+    				margin-top: 50px;
+    				margin-right: 0;
+    			}
+			}
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.page {
+		.header {
+			.down-header {
+				.info-down-header {
+					.selection-city {
+					    width: 75%;
+					}
+				}
+			}
+		}
+
+		.history {
+			.content-history {
+				.top-history {
+					flex-direction: column;
+					align-items: center;
+
+					.logo {
+						margin-bottom: 50px;
+					}
+
+					.first-description-project {
+						width: 90%;
+						margin-bottom: 50px;
+					}
+
+					.second-description-project {
+						width: 90%;
+
+						.first-text-second-description-project {
+							line-height: 200%;
+						}
+
+						.second-text-second-description-project {
+							line-height: 200%;
+						}
+
+						.three-text-second-description-project {
+							line-height: 200%;
+						}
+					}
+				}
+			}
+		}
+
+		.for-driver {
+			.content-for-driver {
+				.terms {
+					flex-direction: column;
+
+					.term {
+						width: 100%!important;
+						margin-bottom: 20px;
+					}
+				}
+				
+				.service-support {
+					padding: 2px 3px;
+				}
+			}
+
+			.select-language-network {
+				padding-top: 20px;
+			}
+		}
+
+		.bonus {
+			.cards {
+				.card {
+					width: 100%;
+
+					.text-card {
+						line-height: 200%;
+					}
+				}
+			}
+		}
+
+		.auto-park {
+			.top-auto-park {
+				.text-auto-park {
+					line-height: 200%;
+				}
+
+				.image-cars {
+					text-align: center;
+
+					a {
+						width: 100%;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+
+		.faq {
+			.content-faq {
+				flex-direction: column;
+				padding: 50px 0;
+
+				.left-side-faq {
+					.overlay-left-side-faq {
+						.overlay-btn-faq {
+							.btn-faq {
+							    padding: 10px 50px;
+							    margin-left: 0;
+							}
+						}
+					}
+				}
+
+				.accordion-container {
+					padding-top: 50px;
+					width: 90%;
+					
+					.accordion-content {
+						width: 100%;
+
+						.accordion-title {
+							font-size: 16px;
+						}
+
+						.accordion-body {
+							p {
+								line-height: 200%;
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.reviews {
+			.overlay-reviews {
+				flex-direction: column;
+				align-items: flex-start;
+
+				.right-side-reviews {
+					display: none;
+				}
+			}
+		}
+
+		.contacts {
+			padding: 0;
+			
+			.overlay-contacts {
+				.maps {
+					display: none;
+				}
+
+				.forms {
+					width: 90%;
+
+					.btn-forms {
+						flex-direction: column;
+					}
+				}
+			}
+			
+			.select-language-network {
+				.languages {
+					display: flex;
+					flex-direction: column;
+
+					.language {
+						padding-bottom: 20px;
+					}
+				}
+
+				.network-part {
+					display: flex;
+					flex-direction: column;
+					
+					.icon {
+						padding-bottom: 10px;
+					}
 				}
 			}
 		}

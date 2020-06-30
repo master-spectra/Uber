@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Uber</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
@@ -9,7 +10,6 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
-	<title>Uber</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -19,7 +19,7 @@
 		<div class="header">
 			<div class="top-header">
 				<div class="wrapper">
-					<ul>
+					<ul class="fixed-menu">
 						<li><a href="#main">Главная</a></li>
 						<li><a href="#history">История</a></li>
 						<li><a href="#for-driver">Для водителей</a></li>
@@ -30,6 +30,19 @@
 						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
+				<div class="mobile-hamburger-menu">
+                    <span class="menu-icon fas fa-bars"></span>
+                    <ul>
+                        <li><a href="#main">Главная</a></li>
+						<li><a href="#history">История</a></li>
+						<li><a href="#for-driver">Для водителей</a></li>
+						<li><a href="#bonus">Бонусы и Скидки</a></li>
+						<li><a href="#auto-park">Автопарк</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
 			</div>
 			<div class="down-header">
 				<div class="wrapper">
@@ -47,17 +60,6 @@
 						</div>
 						<div class="overlay-btn-down-header">
 							<button class="btn-down-header">Подписаться</button>
-						</div>
-						<div class="select-language-network">
-							<div class="languages">
-								<span class="ru-language language">Русский</span>
-								<span class="ua-language language">Українська</span>
-							</div>
-							<div class="network-part">
-								<span class="fab fa-facebook-square icon"></span>
-								<span class="fab fa-vk icon"></span>
-								<span class="fab fa-viber icon"></span>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -83,19 +85,6 @@
 							<p class="first-text-second-description-project">FREE NOW - это в большей части мобильное приложение, которое соединяет пассажира с находящимися рядом водителями-партнерами. Для использования сервиса пассажиру достаточно просто скачать приложение себе на телефон и вызвать автомобиль.</p>
 							<p class="second-text-second-description-project">FREE NOW - это в большей части мобильное приложение, которое соединяет пассажира с находящимися рядом водителями-партнерами. Для использования сервиса пассажиру достаточно просто скачать приложение себе на телефон и вызвать автомобиль.</p>
 							<p class="three-text-second-description-project">FREE NOW - это в большей части мобильное приложение, которое соединяет пассажира с находящимися рядом водителями-партнерами. Для использования сервиса пассажиру достаточно просто скачать приложение себе на телефон и вызвать автомобиль.</p>
-						</div>
-					</div>
-					<div class="down-history">
-						<div class="select-language-network">
-							<div class="languages">
-								<span class="ru-language language">Русский</span>
-								<span class="ua-language language">Українська</span>
-							</div>
-							<div class="network-part">
-								<span class="fab fa-facebook-square icon"></span>
-								<span class="fab fa-vk icon"></span>
-								<span class="fab fa-viber icon"></span>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -152,17 +141,6 @@
 						</p>
 					</div>
 				</div>
-				<div class="select-language-network">
-					<div class="languages">
-						<span class="ru-language language">Русский</span>
-						<span class="ua-language language">Українська</span>
-					</div>
-					<div class="network-part">
-						<span class="fab fa-facebook-square icon"></span>
-						<span class="fab fa-vk icon"></span>
-						<span class="fab fa-viber icon"></span>
-					</div>
-				</div>
 			</div>
 		</div>
 		<a id="bonus"></a>
@@ -206,17 +184,6 @@
 						<p class="text-card">Рейтинг от пассажиров от 0 до 5. Влияет на бонусы, регулярность повторного осмотра и сотрудничество в целом.</p>
 					</div>
 				</div>
-				<div class="select-language-network">
-					<div class="languages">
-						<span class="ru-language language">Русский</span>
-						<span class="ua-language language">Українська</span>
-					</div>
-					<div class="network-part">
-						<span class="fab fa-facebook-square icon"></span>
-						<span class="fab fa-vk icon"></span>
-						<span class="fab fa-viber icon"></span>
-					</div>
-				</div>
 			</div>
 		</div>
 		<a id="auto-park"></a>
@@ -235,17 +202,6 @@
 						<a href="img/infinity.jpg" data-rel="lightcase:Mycollection"><img src="img/infinity.jpg" alt="" class="cars-img"></a>
 						<a href="img/chevrolet.jpg" data-rel="lightcase:Mycollection"><img src="img/chevrolet.jpg" alt="" class="cars-img"></a>
 						<a href="img/dacia.jpg" data-rel="lightcase:Mycollection"><img src="img/dacia.jpg" alt="" class="cars-img"></a>
-					</div>
-				</div>
-				<div class="select-language-network">
-					<div class="languages">
-						<span class="ru-language language">Русский</span>
-						<span class="ua-language language">Українська</span>
-					</div>
-					<div class="network-part">
-						<span class="fab fa-facebook-square icon"></span>
-						<span class="fab fa-vk icon"></span>
-						<span class="fab fa-viber icon"></span>
 					</div>
 				</div>
 			</div>
@@ -296,17 +252,6 @@
 		                </div>
 		            </div>
 				</div>
-				<div class="select-language-network">
-					<div class="languages">
-						<span class="ru-language language">Русский</span>
-						<span class="ua-language language">Українська</span>
-					</div>
-					<div class="network-part">
-						<span class="fab fa-facebook-square icon"></span>
-						<span class="fab fa-vk icon"></span>
-						<span class="fab fa-viber icon"></span>
-					</div>
-				</div>
 			</div>
 		</div>
 		<a id="reviews"></a>
@@ -355,17 +300,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="select-language-network">
-					<div class="languages">
-						<span class="ru-language language">Русский</span>
-						<span class="ua-language language">Українська</span>
-					</div>
-					<div class="network-part">
-						<span class="fab fa-facebook-square icon"></span>
-						<span class="fab fa-vk icon"></span>
-						<span class="fab fa-viber icon"></span>
-					</div>
-				</div>
 			</div>
 		</div>
 		<a id="contacts"></a>
@@ -386,6 +320,17 @@
 								<input type="button" value="Отправить" class="send-file">
 							</div>
 						</form>
+					</div>
+				</div>
+				<div class="select-language-network">
+					<div class="languages">
+						<span class="ru-language language">Русский</span>
+						<span class="ua-language language">Українська</span>
+					</div>
+					<div class="network-part">
+						<span class="fab fa-facebook-square icon"></span>
+						<span class="fab fa-vk icon"></span>
+						<span class="fab fa-viber icon"></span>
 					</div>
 				</div>
 			</div>

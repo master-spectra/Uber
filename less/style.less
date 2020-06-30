@@ -52,13 +52,17 @@ p {
             right: 0;
             z-index: 100;
 
-            ul {
+            .fixed-menu {
                 display: flex;
                 justify-content: center;
 
                 li {
                     padding-right: 20px;
                 }
+            }
+
+            .mobile-hamburger-menu {
+                display: none;
             }
         }
 
@@ -87,7 +91,6 @@ p {
                         padding: 0 7px;
                         cursor: pointer;
                         user-select: none;
-                        transition: all 0.3s linear;
 
                         &:hover {
                             color: #3cffc4;
@@ -119,30 +122,6 @@ p {
 
                         &:active {
                             transform: scale(0.95)
-                        }
-                    }
-                }
-
-                .select-language-network {
-                    padding-top: 182px;
-                    display: flex;
-                    justify-content: space-between;
-                    
-                    .languages {
-                        .language {
-                            color: #fff;
-                            font-size: 18px;
-                            padding: 0 10px;
-                            cursor: pointer;
-                        }
-                    }
-                    
-                    .network-part {
-                        .icon {
-                           color: #fff;
-                            font-size: 18px;
-                            padding: 0 10px;
-                            cursor: pointer; 
                         }
                     }
                 }
@@ -258,32 +237,6 @@ p {
                     }
                 }   
             }
-
-            .down-history {                
-                .select-language-network {
-                    display: flex;
-                    padding-top: 186px;
-                    justify-content: space-between;
-                    
-                    .languages {
-                        .language {
-                            color: #fff;
-                            font-size: 18px;
-                            padding: 0 10px;
-                            cursor: pointer;
-                        }
-                    }
-                    
-                    .network-part {
-                        .icon {
-                           color: #fff;
-                            font-size: 18px;
-                            padding: 0 10px;
-                            cursor: pointer; 
-                        }
-                    }
-                }
-            }  
         }
     }
 
@@ -343,30 +296,6 @@ p {
                 }
             }
         }
-
-        .select-language-network {
-            display: flex;
-            padding-top: 3px;
-            justify-content: space-between;
-            
-            .languages {
-                .language {
-                    color: #000;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer;
-                }
-            }
-            
-            .network-part {
-                .icon {
-                   color: #000;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer; 
-                }
-            }
-        }
     }
 
     .bonus {
@@ -393,29 +322,6 @@ p {
                 .text-card {
                     font-size: 16px;
                     color: #fff;
-                }
-            }
-        }
-
-        .select-language-network {
-            display: flex;
-            justify-content: space-between;
-            
-            .languages {
-                .language {
-                    color: #fff;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer;
-                }
-            }
-            
-            .network-part {
-                .icon {
-                   color: #fff;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer; 
                 }
             }
         }
@@ -455,31 +361,6 @@ p {
                         width: 200px;
                         height: 100px;
                     }
-                }
-            }
-        }
-    
-        .select-language-network {
-            display: flex;
-            padding-top: 15px;
-            padding-bottom: 5px;
-            justify-content: space-between;
-            
-            .languages {
-                .language {
-                    color: #fff;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer;
-                }
-            }
-            
-            .network-part {
-                .icon {
-                   color: #fff;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer; 
                 }
             }
         }
@@ -552,7 +433,6 @@ p {
 
                 .accordion-content {
                     .accordion-title {
-                        width: 100%;
                         background: linear-gradient(90deg, #1a1a25 20%, #070513 39%, #031317 57%);
                         color: #fff;
                         outline: none;
@@ -576,29 +456,6 @@ p {
                         border-bottom: 0;
                         display: none;
                     }
-                }
-            }
-        }
-
-        .select-language-network {
-            display: flex;
-            justify-content: space-between;
-            
-            .languages {
-                .language {
-                    color: #000;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer;
-                }
-            }
-            
-            .network-part {
-                .icon {
-                   color: #000;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer; 
                 }
             }
         }
@@ -668,6 +525,8 @@ p {
                                 
                                 &:nth-child(2) {
                                     color: #fff;
+                                    transform: scale(1.3);
+                                    padding: 0 10px;
                                 }
                             }
                         }
@@ -690,35 +549,13 @@ p {
                 }
             }
         }
-        
-        .select-language-network {
-            display: flex;
-            justify-content: space-between;
-            
-            .languages {
-                .language {
-                    color: #fff;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer;
-                }
-            }
-            
-            .network-part {
-                .icon {
-                   color: #fff;
-                    font-size: 18px;
-                    padding: 0 10px;
-                    cursor: pointer; 
-                }
-            }
-        }
     }
 
     .contacts {
         .image;
         background-image: url(../img/footer-bg.jpg);
         padding: 100px 0;
+       
         .overlay-contacts {
             display: flex;
             flex-direction: row;
@@ -791,6 +628,30 @@ p {
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .select-language-network {
+            display: flex;
+            padding-top: 50px;
+            justify-content: space-between;
+            
+            .languages {
+                .language {
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                }
+            }
+            
+            .network-part {
+                .icon {
+                   color: #fff;
+                    font-size: 18px;
+                    padding: 0 10px;
+                    cursor: pointer; 
                 }
             }
         }
