@@ -86,6 +86,7 @@ p {
                     span {
                         color: #fff;
                         opacity: 0.9;
+                        transition: all 0.3s ease;
                         padding: 0 7px;
                         cursor: pointer;
                         user-select: none;
@@ -179,7 +180,7 @@ p {
                             color: #fff;
                             transition: all 0.3s linear;
                             padding: 10px 15px;
-                                background: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
+                            background: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
 
                             &:hover {
                                 box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
@@ -199,7 +200,7 @@ p {
                             color: #fff;
                             transition: all 0.3s linear;
                             padding: 10px 15px;
-                                background: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
+                            background: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
 
                             &:hover {
                                 box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
@@ -373,7 +374,7 @@ p {
             .left-side-faq {
                 .image;
                 position: relative;
-                width: 80%;
+                width: 50% !important;
                 background-image: url(../img/faq-bg.jpg);
                 
                 .overlay-left-side-faq {
@@ -427,13 +428,17 @@ p {
                 width: 50%;
 
                 .accordion-content {
+                    width: 100%;
+
                     .accordion-title {
                         background: linear-gradient(90deg, #1a1a25 20%, #070513 39%, #031317 57%);
                         color: #fff;
                         outline: none;
                         border: 1px solid silver;
+                        width: 100%;
+                        font-size: 16px;
                         border-bottom: 0;
-                        padding: 10px 30px;
+                        padding: 20px 0;
                         display: block;
                         
                         &.active {
@@ -447,6 +452,7 @@ p {
                         background-color: #fff;
                         padding: 20px;
                         line-height: 170%;
+                        width: 93%;
                         display: inline-block;
                         border-bottom: 0;
                         display: none;
