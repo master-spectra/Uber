@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="less/style.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<div class="page" id="fullpage">
+		<div class="overlay"></div>
 		<a id="main"></a>
 		<div class="header">
 			<div class="top-header">
@@ -63,6 +64,44 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="call-back-header">
+				<div class="header-call-back-header">
+					<h2 class="title-call-back">Хотите, мы вам перезвоним?</h2>
+				</div>
+				<div class="content-call-back">
+					<h2 class="title-content-call-back">Введите ваш номер и мы свяжемся с <br> вами за 30 секунд!</h2>
+					<form action="post">
+						<input type="text">
+					</form>
+					<div class="btn-overlay">
+						<button class="wait-call">Жду звонка!</button>
+						<button class="close-call-back-header">Закрыть</button>
+					</div>
+					<p>Нажимая на кнопку, вы даете согласие на <a href="">обработку персональных <br> данных</a></p>
+				</div>
+			</div>
+			<div class="side-window">
+				<h2 class="title-side-window">Войдите в систему!</h2>
+				<button class="btn-hidden-side-window"><span class="fas fa-times"></span></button>
+				<form action="post">
+					<input type="email" placeholder="Введите почту">
+					<input type="password" placeholder="Введите пароль">
+				</form>
+				<button class="sign-up">Зарегистрироваться</button>
+			</div>
+			<div class="form-sign-up">
+				<h2 class="title-form-sign-up">Регистрация</h2>
+				<form action="post">
+					<input type="email" placeholder="Введите почту" class="field-enter">
+					<input type="text" placeholder="Введите nick" class="field-enter">
+					<input type="password" placeholder="Введите пароль" class="field-enter">
+					<input type="button" class="btn-form-sign-up" value="Зарегистрироваться">
+				</form>
+			</div>
+			<div class="window-successfully-sign-up">
+				<span class="far fa-smile"></span>
+				<h2 class="title-window-successfully-sign-up">Вы успешно зарегистрировались!</h2>
 			</div>
 		</div>
 		<a id="history"></a>
@@ -217,6 +256,22 @@
 							<div class="overlay-btn-faq">
 								<button class="btn-faq">Задать вопрос</button>
 							</div>
+							<div class="call-back">
+								<div class="header-call-back">
+									<h2 class="title-call-back">Хотите, мы вам перезвоним?</h2>
+								</div>
+								<div class="content-call-back">
+									<h2 class="title-content-call-back">Введите ваш номер и мы свяжемся с <br> вами за 30 секунд!</h2>
+									<form action="post">
+										<input type="text">
+									</form>
+									<div class="btn-overlay">
+										<button class="wait-call">Жду звонка!</button>
+										<button class="close-call-back">Закрыть</button>
+									</div>
+									<p>Нажимая на кнопку, вы даете согласие на <a href="">обработку персональных <br> данных</a></p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="accordion-container">
@@ -298,6 +353,27 @@
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="enter-reviews">
+						<div class="header-enter-reviews">Оставьте отзыв</div>
+						<form action="post">
+							<div class="first-field field">
+								<p>Имя</p>
+								<input type="text">
+							</div>
+							<div class="second-field field">
+								<p>E-mail</p>
+								<input type="email">
+							</div>
+							<div class="three-field field">
+								<p>Ваш отзыв</p>
+								<textarea name="" id="" cols="30" rows="10"></textarea>							
+							</div>
+							<div class="overlay-btn">
+								<input type="button" value="Оставить отзыв" class="btn-form-review">
+								<input type="button" value="Закрыть" class="close-window-review">
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
