@@ -20,7 +20,7 @@ let
 	closeWindowReview 			= document.querySelector('.close-window-review'),
 	btnFormSignUp				= document.querySelector('.btn-form-sign-up'),
 	btnDownHeader 				= document.querySelector('.btn-down-header'),
-	windowSuccess 				= document.querySelector('.window-successfully-sign-up');
+	windowSuccess 				= document.querySelector('.window-successfully-sign-up'),
 	callBackMenu				= document.querySelector('.call-back'),
 	enterReviews 				= document.querySelector('.enter-reviews'),
 	sideWindow 					= document.querySelector('.side-window'),
@@ -28,7 +28,7 @@ let
 	formSignUp					= document.querySelector('.form-sign-up'),
 	btnSignUp 					= document.querySelector('.sign-up'),
 	overlay 					= document.querySelector('.overlay'),
-	btnFaq						= document.querySelector('.btn-faq'),
+	btnFaq						= document.querySelector('.btn-faq');
 
 // Задаем функцие задержку 
 let timerId						= setTimeout(function showSideWindow() {

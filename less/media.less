@@ -18,6 +18,27 @@
 					}
 				}
 			}
+
+			.call-back-header {
+				top: 2%;
+				right: 22%;
+			}
+
+			.side-window {
+			    right: 2%;
+			    bottom: 3%;
+			    top: auto;
+			}
+
+			.form-sign-up {
+				top: 15%;
+				left: 38%;
+			}
+
+			.window-successfully-sign-up {
+				top: 15%;
+			    left: 31%;
+			}
 		}
 
 		.history {
@@ -77,6 +98,23 @@
 			
 			.content-faq {
 				margin: 66px 0;
+
+				.left-side-faq {
+					.overlay-left-side-faq {
+						.call-back {
+							top: 10%;
+							right: 19%;
+
+							.content-call-back {
+								.btn-overlay {
+									.wait-call {
+										margin-right: 20px;
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -88,6 +126,15 @@
 				
 				.right-side-reviews {
 		        	margin-right: 18%;
+				}
+
+				.enter-reviews {
+					right: 26%;
+					top: 11%;
+
+					.header-enter-reviews {
+					    padding: 30px 0;
+					}
 				}
 			}
 		}
@@ -120,45 +167,31 @@
 					display: none;
 				}
 				
-				.mobile-hamburger-menu {
+				.overlay-mobile-menu {
 					display: block;
-					position: absolute;
-					visibility: hidden;
-					top: 10px;
-					right: 20px;
+					text-align: start;
+					
+					.menu-mobile {
+						top: 20px;
+						opacity: 0;
+						transform: translateX(-200%);
+						left: 0;
+						position: absolute;
+						display: block;
+						right: 0;
+						margin-top: 20px;
+						bottom: 0;
+						z-index: 502;
 
-				    .menu-icon {
-				        visibility: visible;
-				        font-size: 30px;
-				        color: #fff;
-				    }
+						li {
+							background-color: #000;
+							padding: 19px;
 
-				    ul {
-				        transition: all 0.3s ease;
-						padding-top: 10px;
-
-				        li {
-				            padding-bottom: 10px;
-
-				            a {
+							a {
 								color: #fff;
-				                font-size: 18px;
-				                text-decoration: none;
-				            }
-				        }
-				        
-				        &:hover {
-				            visibility: visible;
-				        }
-				    }
-
-				    
-				    &:hover {
-				        visibility: visible;
-				    }
-				
-					&:active {
-						visibility: hidden;
+							    font-size: 20px;	
+							}
+						}
 					}
 				}
 			}
@@ -172,6 +205,23 @@
 					}
 				}
 			}
+
+			.call-back-header {
+			    top: 2%;
+			    right: 11%;
+			}
+		}
+
+		.faq {			
+			.content-faq {
+				.left-side-faq {
+					.overlay-left-side-faq {
+						.call-back {
+							right: 7%;
+						}
+					}
+				}
+			}
 		}
 		
 		.reviews {
@@ -182,6 +232,10 @@
     			.right-side-reviews {
     				margin-top: 50px;
     				margin-right: 0;
+    			}
+
+    			.enter-reviews {
+    				right: 39%;
     			}
 			}
 		}
@@ -197,6 +251,32 @@
 					    width: 75%;
 					}
 				}
+			}
+
+			.call-back-header {
+				left: 2%;
+				right: 2%;
+				top: 1%;
+
+				.content-call-back {
+					.btn-overlay {
+						.wait-call {
+						    margin-right: 0; 
+    						margin-bottom: 20px;
+						}
+					}
+				}
+			}
+
+			.form-sign-up {
+				top: 15%;
+    			left: 10%;
+			}
+
+			.window-successfully-sign-up {
+			    top: 15%;
+    			left: 2%;
+    			right: 2%;
 			}
 		}
 
@@ -290,6 +370,8 @@
 				padding: 50px 0;
 
 				.left-side-faq {
+					width: 90%!important;
+
 					.overlay-left-side-faq {
 						.overlay-btn-faq {
 							.btn-faq {
@@ -323,14 +405,7 @@
 		}
 
 		.reviews {
-			.overlay-reviews {
-				flex-direction: column;
-				align-items: flex-start;
-
-				.right-side-reviews {
-					display: none;
-				}
-			}
+			display: none;
 		}
 
 		.contacts {
